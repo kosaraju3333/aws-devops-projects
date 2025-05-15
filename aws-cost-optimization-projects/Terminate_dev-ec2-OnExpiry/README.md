@@ -7,8 +7,8 @@ In our development workflow, developers often request temporary EC2 VMs to test 
 ---
 
 ## 💡 Solution Overview
+![Screenshot 2025-05-15 at 1 07 54 PM](https://github.com/user-attachments/assets/708a0cb3-373c-43f5-86af-196e232c7154)
 
-![Screenshot 2025-05-15 at 1 07 54 PM](https://github.com/user-attachments/assets/778f937d-5980-49d7-a064-8ec2f1d72ed4)
 
 
 To resolve this, we created a fully automated lifecycle management system:
