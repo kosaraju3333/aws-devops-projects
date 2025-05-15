@@ -1,0 +1,8 @@
+ami = "ami-07911b26212312e03"
+instance_type = "t2.small"
+subnet_id = "subnet-ID"
+key_name = "my_work"
+security_groups = "sg-ID"
+Name = "Test-vm"
+Owner = "DevOps"
+Expiry_Date = "07-05-2025"
