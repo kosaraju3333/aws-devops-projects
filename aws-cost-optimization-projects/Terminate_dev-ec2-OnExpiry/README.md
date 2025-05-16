@@ -24,7 +24,7 @@ Eventbridge Trigger Rule:
 ![Screenshot 2025-05-16 at 8 37 16 AM](https://github.com/user-attachments/assets/3b038e37-f61f-40b3-bbfc-404b090d767b)
 Lambda Function:
 ![Screenshot 2025-05-15 at 1 07 54 PM](https://github.com/user-attachments/assets/708a0cb3-373c-43f5-86af-196e232c7154)
-SNS Send Email:
+SNS Sends Email:
 ![Screenshot 2025-05-16 at 8 14 59 AM](https://github.com/user-attachments/assets/babcf2d7-c55a-49cc-bbed-8921a489d5e2)
 
 ---
