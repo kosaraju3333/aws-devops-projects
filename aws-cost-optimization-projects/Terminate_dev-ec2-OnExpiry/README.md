@@ -7,9 +7,6 @@ In our development workflow, developers often request temporary EC2 VMs to test 
 ---
 
 ## 💡 Solution Overview
-![Screenshot 2025-05-15 at 1 07 54 PM](https://github.com/user-attachments/assets/708a0cb3-373c-43f5-86af-196e232c7154)
-
-
 
 To resolve this, we created a fully automated lifecycle management system:
 
@@ -21,6 +18,10 @@ To resolve this, we created a fully automated lifecycle management system:
   - Sends email notifications via **SNS**:
     - For instances that are **terminated**.
     - For instances **nearing expiration** (within 1 day).
+
+##  Screenshots
+![Screenshot 2025-05-15 at 1 07 54 PM](https://github.com/user-attachments/assets/708a0cb3-373c-43f5-86af-196e232c7154)
+![Screenshot 2025-05-16 at 8 14 59 AM](https://github.com/user-attachments/assets/babcf2d7-c55a-49cc-bbed-8921a489d5e2)
 
 ---
 
