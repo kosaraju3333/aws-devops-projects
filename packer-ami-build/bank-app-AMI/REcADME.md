@@ -84,27 +84,31 @@ Before building the AMI, ensure you have the following installed locally:
 
 ---
 
-## 🔧 Variables
+## 🏗️ How to Build the AMI
 
-Edit or provide the following in `variables.pkr.hcl`:
+1️⃣ Initialize Packer
+packer init .
 
-```hcl
-variable "ami_name" {
-  type    = string
-  default = "bank-app-custom-ami"
-}
+2️⃣ Validate Configuration
+packer validate .
 
-variable "instance_type" {
-  type    = string
-  default = "t2.micro"
-}
+3️⃣ Build AMI
+packer build .
 
-variable "region" {
-  type    = string
-  default = "us-east-1"
-}
 
-variable "ssh_username" {
-  type    = string
-  default = "ubuntu"
-}
+Once successful, Packer will output the AMI ID at the end:
+
+==> Builds finished. The artifacts of successful builds are:
+--> amazon-ebs: AMIs were created:
+us-east-1: ami-0abcd12345efgh678
+
+## 🧩 How the Service Works
+
+The systemd unit (bankapp.service) starts automatically on boot.
+
+It runs your Bank App using:
+
+/usr/bin/java -jar /home/ubuntu/bank-app/bankapp-0.0.1-SNAPSHOT.jar >> /var/log/bank-app/app.log 2>&1
+
+
+Logs are stored in /var/log/bank-app/app.log.
