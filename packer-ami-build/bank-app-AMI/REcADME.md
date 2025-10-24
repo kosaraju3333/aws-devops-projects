@@ -111,11 +111,11 @@ us-east-1: ami-0abcd12345efgh678
 
 ## 🧩 How the Service Works
 
-The systemd unit (bankapp.service) starts automatically on boot.
+* The systemd unit (bankapp.service) starts automatically on boot.
 
-It runs your Bank App using:
+* It runs your Bank App using:
 
-/usr/bin/java -jar /home/ubuntu/bank-app/bankapp-0.0.1-SNAPSHOT.jar >> /var/log/bank-app/app.log 2>&1
+```bash/usr/bin/java -jar /home/ubuntu/bank-app/bankapp-0.0.1-SNAPSHOT.jar >> /var/log/bank-app/app.log 2>&1```
 
 
-Logs are stored in /var/log/bank-app/app.log.
+* Logs are stored in /var/log/bank-app/app.log.
