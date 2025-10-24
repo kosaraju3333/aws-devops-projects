@@ -87,13 +87,19 @@ Before building the AMI, ensure you have the following installed locally:
 ## 🏗️ How to Build the AMI
 
 1️⃣ Initialize Packer
+```bash
 packer init .
+```
 
 2️⃣ Validate Configuration
+```bash
 packer validate .
+```
 
 3️⃣ Build AMI
+```bash
 packer build .
+```
 
 
 Once successful, Packer will output the AMI ID at the end:
