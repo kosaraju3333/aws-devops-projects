@@ -102,11 +102,12 @@ packer build .
 ```
 
 
-Once successful, Packer will output the AMI ID at the end:
+* ✅ Once successful, Packer will output the AMI ID at the end:
 
-==> Builds finished. The artifacts of successful builds are:
+```bash==> Builds finished. The artifacts of successful builds are:
 --> amazon-ebs: AMIs were created:
 us-east-1: ami-0abcd12345efgh678
+```
 
 ## 🧩 How the Service Works
 
