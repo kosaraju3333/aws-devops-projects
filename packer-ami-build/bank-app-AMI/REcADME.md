@@ -22,6 +22,22 @@ This AMI includes:
 
 packer-project/
 │
+├── main.pkr.hcl
+├── variables.pkr.hcl
+│
+├── scripts/
+│   ├── java_installation.sh
+│   ├── aws_installation.sh
+│   └── bank-app-start.sh        ✅ (below)
+│
+├── service-files/
+│   └── bankapp.service          ✅ (below)
+│
+└── README.md
+
+
+packer-project/
+│
 ├── main.pkr.hcl # Main Packer configuration file
 ├── variables.pkr.hcl # Variable definitions
 │
