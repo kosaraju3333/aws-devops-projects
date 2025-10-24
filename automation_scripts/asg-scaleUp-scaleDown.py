@@ -26,7 +26,7 @@ from zoneinfo import ZoneInfo
 from pprint import pprint
 
 ## Add ASG names to the below list
-asg_list = ['bank-app-ASG', 'portal-app-ASG']
+asg_list = ['Bnak-app-ASG', 'portal-app-ASG']
 
 # Get the current date and time
 current_datetime = datetime.now(ZoneInfo("Asia/Kolkata"))
