@@ -115,11 +115,11 @@ WantedBy=multi-user.target
 #!/bin/bash
 
 #########################################################################
-#									                                                      #
-# This Script will perform 2 operations.				                        #
-# 	1) Fetch DB Secrets from AWS Secrets Manager and export as env 	    #
-# 	2) Download bank app jar file from AWS S3 and start the  app	      #
-#									                                                      #
+#									                                                      
+# This Script will perform 2 operations.				                        
+# 	1) Fetch DB Secrets from AWS Secrets Manager and export as env 	    
+# 	2) Download bank app jar file from AWS S3 and start the  app	      
+#									                                                      
 #########################################################################
 
 # declared variable working_dir and assign work directory path
