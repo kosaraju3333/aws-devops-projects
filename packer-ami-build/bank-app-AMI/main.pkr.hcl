@@ -17,7 +17,7 @@ source "amazon-ebs" "ubuntu" {
 
   source_ami_filter {
     filters = {
-      name                = "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"
+      name                = "ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*"
       root-device-type    = "ebs"
       virtualization-type = "hvm"
     }
@@ -27,14 +27,14 @@ source "amazon-ebs" "ubuntu" {
   ssh_username = var.ssh_username
 
   tags = {
-    Name        = "Bank-app-AMI-V1"
+    Name        = "Bank-app-packer-AMI-V1"
     Environment = "Development"
     CreatedBy   = "Packer"
   }
 }
 
 build {
-  name    = "learn-packer"
+  name    = "BankApp-AMI-build-packer"
   sources = ["source.amazon-ebs.ubuntu"]
 
 
