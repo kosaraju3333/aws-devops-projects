@@ -107,6 +107,7 @@ WantedBy=multi-user.target
 ```
 
 * It runs your Bank App using start up script:
+  
   📁 Path:
   /opt/bank-app-start.sh
 
