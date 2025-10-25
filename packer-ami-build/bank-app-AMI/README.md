@@ -18,42 +18,6 @@ This AMI includes:
 
 ---
 
-## 🧩 Folder Structure
-
-packer-project/
-│
-├── main.pkr.hcl
-├── variables.pkr.hcl
-│
-├── scripts/
-│   ├── java_installation.sh
-│   ├── aws_installation.sh
-│   └── bank-app-start.sh        ✅ (below)
-│
-├── service-files/
-│   └── bankapp.service          ✅ (below)
-│
-└── README.md
-
-
-packer-project/
-│
-├── main.pkr.hcl # Main Packer configuration file
-├── variables.pkr.hcl # Variable definitions
-│
-├── scripts/
-│ ├── java_installation.sh # Installs Java 17
-│ ├── aws_installation.sh # Installs AWS CLI v2
-│ └── bank-app-start.sh # Bank app startup script
-│
-├── service-files/
-│ └── bankapp.service # systemd unit file for app startup
-│
-└── README.md # Project documentation
-
-
----
-
 ## ⚙️ Prerequisites
 
 Before building the AMI, ensure you have the following installed locally:
