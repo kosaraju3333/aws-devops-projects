@@ -27,7 +27,7 @@ source "amazon-ebs" "ubuntu" {
   ssh_username = var.ssh_username
 
   tags = {
-    Name        = "Bank-app-packer-AMI-V1"
+    Name        = var.ami_name
     Environment = "Development"
     CreatedBy   = "Packer"
   }
@@ -45,6 +45,11 @@ build {
   provisioner "shell" {
     script = "scripts/aws_installation.sh"
   }
+
+  provisioner "shell" {
+    script = "scripts/codedeploy_agent_installation.sh"
+  }
+  
 
   provisioner "file" {
     source = "scripts/bank-app-start.sh"
