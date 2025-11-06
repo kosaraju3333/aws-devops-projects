@@ -1,7 +1,7 @@
 variable "ami_name" {
   description = "Name of the AMI to be created"
   type        = string
-  default     = "bank-app-Codedeploy-packer-AMI-V1"
+  default     = "bank-app-Codedeploy-packer-AMI-V2"
 }
 
 variable "instance_type" {

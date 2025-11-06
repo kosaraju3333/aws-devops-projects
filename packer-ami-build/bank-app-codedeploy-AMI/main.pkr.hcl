@@ -51,6 +51,10 @@ build {
   }
 
   provisioner "shell" {
+    script = "scripts/mysql-client-installation.sh"
+  }
+
+  provisioner "shell" {
     inline = [
       "sudo mkdir /var/log/bank-app"
     ]
