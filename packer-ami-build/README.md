@@ -12,8 +12,8 @@ The AMI comes preinstalled with Java, AWS CLI, and a systemd service that automa
 This AMI includes:
 - Java 17 Runtime
 - AWS CLI v2
-- Custom startup script for the Bank App
-- Preconfigured systemd service (`bankapp.service`)
+- Custom startup scripts
+- Preconfigured systemd services
 - Log directory under `/var/log/bank-app/`
 
 ---
@@ -33,11 +33,13 @@ Before building the AMI, ensure you have the following installed locally:
 
 ## 🧠 What This Packer Template Does
 
-1. **Uses Ubuntu 22.04 LTS (Jammy Jellyfish)** as base AMI.
-2. Installs:
+1. **Uses Ubuntu 24.04 LTS** as base AMI.
+2. Install required packages:
    - Java 17 (`openjdk-17-jre`)
    - AWS CLI v2
-3. Copies and configures startup script:
+   - AWS CodeDeploy
+   - MySql Client
+3. Copies and configures required startup scripts:
    - Copies `bank-app-start.sh` → `/opt/bank-app-start.sh`
    - Sets executable permissions
    - Creates `/var/log/bank-app/` for logs
